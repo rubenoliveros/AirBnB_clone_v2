@@ -26,6 +26,7 @@ def index3(text):
     return 'C ' + newtext
 
 
+@app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def index4(text='is cool'):
     """Displays Python followed by what's in text"""
