@@ -27,8 +27,8 @@ def index3(text):
 
 
 @app.route('/python/<text>', strict_slashes=False)
-def index4(text):
-    """Displays C followed by what's in text"""
+def index4(text='is cool'):
+    """Displays Python followed by what's in text"""
     newtext = text.replace('_', ' ')
     return 'Python ' + newtext
 

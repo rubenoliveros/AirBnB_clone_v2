@@ -39,5 +39,11 @@ def index5(number):
     return '%d is a number' % number
 
 
+@app.route('/number_template/<int:number>', strict_slashes=False)
+def index6(number_template):
+    """Displays a number"""
+    return '%d is a number' % number
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000')
